@@ -10,7 +10,7 @@ package cse360assign2;
 public class Calculator {
 
 	private int total; 
-
+	private String history = "0";
 
 	/*This is the constructor; it uses an int value to keep track off 
 	 * for calculations.
@@ -37,6 +37,9 @@ public class Calculator {
 	public void add(int value) {
 
 		total = total + value;
+		
+		//Adds the text "+ the number we want to add to our total" to the history string.
+		history =  history + " + " + value;
 	}
 
 	/* Subtracts the int value given in the parameter from our int total variable.
@@ -46,6 +49,9 @@ public class Calculator {
 	public void subtract(int value) {
 
 		total = total - value;
+		
+		//Adds the text "- the number we want to subtract from our total" to the history string.
+		history =  history + " - " + value;
 	}
 
 	/*Finds the product of the value given in the parameter and our total int value.
@@ -55,6 +61,9 @@ public class Calculator {
 	public void multiply(int value) {
 
 		total = total * value;
+		
+		//Adds the text "* the number we want to multiply our total by" to the history string.
+		history =  history + " - " + value;
 	}
 
 	/*Finds the dividend of the value given in the parameter and our total int value.
@@ -64,6 +73,9 @@ public class Calculator {
 	public void divide(int value) {
 
 		total = total / value;
+		
+		//Adds the text "/ the number we want to divide our total from" to the history string.
+		history =  history + " - " + value;
 	}
 
 	/* Prints the history of all the operation methods and results from this class.
@@ -72,7 +84,7 @@ public class Calculator {
 
 	public String getHistory() {
 		
-		return "";
+		return history;
 	}
 
 }
