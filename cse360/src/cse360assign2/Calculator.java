@@ -11,12 +11,13 @@ public class Calculator {
 
 	private int total; 
 
+
 	/*This is the constructor; it uses an int value to keep track off 
 	 * for calculations.
 	 */
 
-	public Calculator () {
-	
+	public Calculator() {
+
 		total = 0;  // not needed - included for clarity
 	}
 
@@ -25,53 +26,51 @@ public class Calculator {
 	 */
 
 	public int getTotal() {
-	
-		return 0;
+
+		return total;
 	}
 
 	/*Adds the int value given in the parameter to our int total variable.
 	 * @parameter the value we want to add to our total.
 	 */
 
-	public void add (int value) {
-	
+	public void add(int value) {
 
+		total = total + value;
 	}
 
 	/* Subtracts the int value given in the parameter from our int total variable.
 	 * @parameter the value we want subtract from our total.
 	 */
 
-	public void subtract (int value) {
-	
+	public void subtract(int value) {
 
+		total = total - value;
 	}
 
 	/*Finds the product of the value given in the parameter and our total int value.
 	 * @parameter the value we want to multiply our total value by.
 	 */
 
-	public void multiply (int value) {
-	
+	public void multiply(int value) {
 
+		total = total * value;
 	}
 
 	/*Finds the dividend of the value given in the parameter and our total int value.
 	 * @parameter the value we want to multiply our total value by.
 	 */
 
-	public void divide (int value) {
+	public void divide(int value) {
 
-		
-		
+		total = total / value;
 	}
 
 	/* Prints the history of all the operation methods and results from this class.
 	 * @return the string containing the history of all operations we have made.
 	 */
 
-	public String getHistory () {
-	
+	public String getHistory() {
 		
 		return "";
 	}
